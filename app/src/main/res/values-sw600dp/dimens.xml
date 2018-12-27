@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default dimension for phone  -->
+    <dimen name="normal_button_text_size">42sp</dimen>
+
+    <dimen name="textview_normal_size">32sp</dimen>
+    <dimen name="textview_caption_size">26sp</dimen>
+
+    <dimen name="edit_text_normal">32sp</dimen>
+
+    <dimen name="main_view_spacing">60sp</dimen>
+
+    <dimen name="progress_padding">30sp</dimen>
+
+    <dimen name="buttonW">80sp</dimen>
+    <dimen name="buttonH">100sp</dimen>
+</resources>

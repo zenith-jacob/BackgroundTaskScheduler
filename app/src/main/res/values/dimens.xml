@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default dimension for tab  -->
+    <dimen name="normal_button_text_size">12sp</dimen>
+
+    <dimen name="textview_normal_size">16sp</dimen>
+    <dimen name="textview_caption_size">12sp</dimen>
+
+    <dimen name="edit_text_normal">12sp</dimen>
+
+    <dimen name="main_view_spacing">20sp</dimen>
+
+    <dimen name="progress_padding">10sp</dimen>
+
+    <dimen name="buttonW">80sp</dimen>
+    <dimen name="buttonH">50sp</dimen>
+</resources>

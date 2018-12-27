@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2e2"
+
+    tools:context="com.zenith.scheduler.MainActivity">
+
+    <LinearLayout
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+            android:minHeight="260dp"
+            android:gravity="bottom"
+
+            android:layout_weight="10">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:minHeight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="bottom|center_horizontal"
+                        android:textColor="@color/colorTextMenu"
+                        android:text="@string/gps_interval"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="top|center_horizontal"
+                        android:text="@string/seconds"
+                        android:textSize="@dimen/textview_caption_size" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/gpsIntervalEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:backgroundTint="#9a52ff"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/edit_text_normal"
+                    android:inputType="number"
+                    android:text="@string/_1"
+                    android:textAlignment="center" />
+
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:minHeight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="bottom|center_horizontal"
+                        android:textColor="@color/colorTextMenu"
+
+                        android:text="@string/battery_interval"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="top|center_horizontal"
+                        android:text="@string/seconds"
+                        android:textSize="@dimen/textview_caption_size" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/batteryIntervalEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/edit_text_normal"
+                    android:inputType="number"
+                    app:backgroundTint="#9a52ff"
+                    android:text="@string/_1"
+                    android:textAlignment="center" />
+
+
+            </TableRow>
+
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:minHeight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:textColor="@color/colorTextMenu"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/data_capacity"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="top|center_horizontal"
+                        android:text="@string/max_number_of_samples"
+                        android:textSize="@dimen/textview_caption_size" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/dataCapacityEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    app:backgroundTint="#9a52ff"
+                    android:textSize="@dimen/edit_text_normal"
+                    android:inputType="number"
+                    android:text="@string/_100"
+                    android:textAlignment="center" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:minHeight="30dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@string/report_url"
+                        android:textColor="@color/colorTextMenu"
+                        android:textSize="@dimen/textview_normal_size" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="top|center_horizontal"
+                        android:text="@string/eg_http"
+                        android:textSize="@dimen/textview_caption_size" />
+                </LinearLayout>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/reportUrlEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="5"
+                    app:backgroundTint="#9a52ff"
+                    android:textSize="@dimen/edit_text_normal"
+                    android:inputType="textUri"
+                    android:text="@string/http_www_mocky_io_v2_5c23eaac3000002b007a5f0b"
+                    android:textAlignment="center" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="top"
+            android:layout_weight="8"
+
+            android:paddingTop="@dimen/main_view_spacing"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+
+                android:gravity="center">
+
+
+                <LinearLayout
+
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:weightSum="10"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/startButton"
+                        android:layout_width="@dimen/buttonW"
+                        android:layout_height="@dimen/buttonH"
+                        android:layout_weight="3"
+                        android:text="@string/start"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/normal_button_text_size"
+                        android:theme="@style/AccentButton"
+                        android:background="@drawable/menubutton"
+                        android:layout_marginEnd="10dp"/>
+
+                    <Button
+                        android:id="@+id/stopButton"
+                        android:layout_width="@dimen/buttonW"
+                        android:layout_height="@dimen/buttonH"
+                        android:layout_weight="3"
+                        android:text="@string/stop"
+                        android:textSize="@dimen/normal_button_text_size"
+                        android:textColor="#fff"
+                        android:theme="@style/AccentButton"
+                        android:background="@drawable/menubutton"
+                        android:layout_marginEnd="10dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/progress_padding"
+                android:orientation="horizontal">
+
+
+                <ProgressBar
+                        style="@style/Base.Widget.AppCompat.ProgressBar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:indeterminateDrawable="@drawable/progress"
+                        android:id="@+id/progressBar"
+                        android:duration="1"
+                        android:fromDegrees="0"
+                        android:pivotX="50%"
+                        android:pivotY="50%"
+                        android:toDegrees="1080"
+                        android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/outputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|center_horizontal"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
